@@ -1,4 +1,7 @@
 # problem set 9: https://cs50.harvard.edu/x/2022/psets/9/finance/
+# Run the command below before "flask run" to make it work:
+# $ export API_KEY=pk_e38d2f58fa384a5699ec53f4fa30161a
+# this API Key is a trial version and will expire in october 2022. Use a random key to check the website, but it won't be able to retreive real time stocks informations
 
 import os
 
@@ -10,8 +13,6 @@ from werkzeug.security import check_password_hash, generate_password_hash
 from datetime import datetime
 
 from helpers import apology, login_required, lookup, usd
-
-# $ export API_KEY=pk_e38d2f58fa384a5699ec53f4fa30161a
 
 # Configure application
 app = Flask(__name__)
