@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+    <!-- get here via POST. The bottom button will get you to /quote via GET -->
+    <form action="/quote" method="get">
+        <div class="mb-3">
+            <h1>Name: {{ name }}</h1>
+        </div>
+        <div class="mb-3">
+            <h1>Price: {{ price }} $</h1>
+        </div>
+        <div class="mb-3">
+            <h1>Symbol: {{ symbol }}</h1>
+        </div>
+        <button class="btn btn-primary" type="submit">Check another Stock</button>
+    </form>
+{% endblock %}

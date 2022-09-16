@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            function check(id) {
+                if (id == "mercury") {
+                    document.getElementById(id).style.background = "green";
+                    document.getElementById("result").innerHTML = "Correct!";
+                }
+                else {
+                    document.getElementById(id).style.background = "red";
+                    document.getElementById("result").innerHTML = "Incorrect";
+                }
+            }
+            function iscorrect() {
+                let answer = document.querySelector('#answer').value;
+
+                if (answer == "jupyter" || answer == "Jupyter")
+                {
+                    document.querySelector('#answer').style.background = "green";
+                    document.getElementById("result2").innerHTML = "Correct!";
+                }
+                else
+                {
+                    document.getElementById("answer").style.background = "red";
+                    document.getElementById("result2").innerHTML = "Incorrect";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>What's the closest planet to the hearth?</h3>
+                <p id="result"> </p>
+
+                <button type="button" id="mars" onclick="check(this.id)">Mars</button>
+                <button type="button" id="venus" onclick="check(this.id)">Venus</button>
+                <button type="button" id="mercury" onclick="check(this.id)">Mercury</button>
+            </div>
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>What's the biggest planet of the solar system?</h3>
+                <p id="result2"> </p>
+                <form onsubmit="return false">
+                    <input autocomplete="off" id="answer" placeholder="Answer" type="text">
+                    <input type="button" value="Submit" onclick="iscorrect()">
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

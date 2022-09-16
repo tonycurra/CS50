@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <div class="mb-5">
+        <table class="center">
+            <tr>
+                <td>Cash balance</td>
+                <td>{{ cash }}</td>
+            </tr>
+            <tr>
+                <td>Total (cash + stocks)</td>
+                <td>{{ grand_total }}</td>
+            </tr>
+        </table>
+    </div>
+    <div class="mb-3">
+        <h3 class="mb-3">Your Stocks</h3>
+        <table class="center" title="Your Stocks">
+            <tr>
+                <th> Stocks </th>
+                <th> Price </th>
+                <th> Shares </th>
+                <th> Total value </th>
+            </tr>
+            {% for item in stocks %}
+            <tr>
+                <td> {{ item['symbol'] }} </td>
+                <td> {{ item['price'] }} </td>
+                <td> {{ item['SUM(shares)'] }} </td>
+                <td> {{ item['tot_value'] }} </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+{% endblock %}

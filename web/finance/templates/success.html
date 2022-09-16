@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Registred
+{% endblock %}
+
+{% block main %}
+    <h1>Registration successful!</h1>
+    <h5>
+        You can now <a href="/login">login</a>.
+    </h5>
+    <script>
+        setTimeout(function(){
+           window.location.href = '/login';
+        }, 3000);
+     </script>
+     <p>Redirects to login in 3 seconds.</p>
+{% endblock %}

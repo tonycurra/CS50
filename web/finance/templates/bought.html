@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Bought!
+{% endblock %}
+
+{% block main %}
+
+    <h1 class="mb-3">Purchase successful!</h1>
+        <h5 class="mb-4">
+            You can see the purchase in your <a href="/history">history</a> page.
+        </h5>
+        <form action="/buy" method="get">
+            <div class="mb-2">
+                <p>Stock name: {{ stock_name }}</p>
+            </div>
+            <div class="mb-2">
+                <p>Symbol: {{ symbol }}</p>
+            </div>
+            <div class="mb-2">
+                <p>Price per share: {{ stock_price }}</p>
+            </div>
+            <div class="mb-2">
+                <p>Shares: {{ shares }}</p>
+            </div>
+            <div class="mb-2">
+                <p>Total price: {{ price }}</p>
+            </div>
+            <button class="btn btn-primary" type="submit">Buy another Stock</button>
+        </form>
+{% endblock %}

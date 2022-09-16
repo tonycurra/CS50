@@ -1,0 +1,42 @@
+body
+{
+    text-align: center;
+}
+
+header
+{
+    font-size: large;
+}
+
+main
+{
+    font-size: medium;
+}
+
+footer
+{
+    font-size: small;
+}
+
+h1
+{
+    color: blue;
+}
+
+a
+{
+    color: #0000ff;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+main {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }

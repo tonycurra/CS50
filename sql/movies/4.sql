@@ -1,0 +1,1 @@
+SELECT COUNT(rating) FROM ratings WHERE rating LIKE "10.0";

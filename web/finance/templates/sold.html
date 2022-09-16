@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    SOLD!
+{% endblock %}
+
+{% block main %}
+
+    <h1 class="mb-3">Stocks sold successfully!</h1>
+        <h5 class="mb-4">
+            You can see the transactions in your <a href="/history">history</a> page.
+        </h5>
+        <form action="/sell" method="get">
+            <div class="mb-2">
+                <p>Stock name: {{ stock_name }}</p>
+            </div>
+            <div class="mb-2">
+                <p>Symbol: {{ symbol }}</p>
+            </div>
+            <div class="mb-2">
+                <p>Price per share: {{ stock_price }}</p>
+            </div>
+            <div class="mb-2">
+                <p>Shares sold: {{ shares }}</p>
+            </div>
+            <div class="mb-2">
+                <p>Total price: {{ price }}</p>
+            </div>
+            <button class="btn btn-primary" type="submit">Sell another Stock</button>
+        </form>
+{% endblock %}
