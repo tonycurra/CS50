@@ -1,2 +1,3 @@
-# CS50
-Problem sets from the course CS50: https://cs50.harvard.edu/x/2022/
+# CS50 - Introduction to Computer Science 
+Problem sets from the course 
+https://cs50.harvard.edu/x/2022/
