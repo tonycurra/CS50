@@ -1,4 +1,4 @@
-# CS50 - Problem Set 9: Finance
+# CS50 - Problem Set 7: Fiftyville
 Problem set 7 from CS50's Introduction to Computer Science <br />
 
 SQL queries to solve a mystery. <br />
