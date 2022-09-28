@@ -1,6 +1,5 @@
 # CS50 - Problem sets
-Problem sets from CS50's Introduction to Computer Science <br />
-This repository contains all the different problem sets from the course. <br />
+This repository contains my solutions to the different problem sets from the course "CS50's Introduction to Computer Science" <br />
 Programming languages used: C, Python, SQL, HTML, CSS, JavaScript, Flask. <br />
 <br />
 Contacts: <br />
